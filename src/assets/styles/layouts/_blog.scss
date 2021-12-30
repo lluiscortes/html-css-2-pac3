@@ -1,0 +1,40 @@
+//--------------------//
+//--- Blog Content ---//
+//--------------------//
+.blog-content {
+  @apply py-20;
+}
+
+//-------------------//
+//--- Blog Header ---//
+//-------------------//
+.blog-header{
+
+  &__thumb {
+    @apply bg-center bg-cover py-60;
+  }
+
+  &__content {
+    @apply mx-auto bg-black -mt-40 max-w-3xl p-10 w-9/10 ;
+    @screen xl {
+      @apply py-14 px-16;
+    }
+  }
+
+  &__title {
+    @apply text-5xl mb-12 leading-tight;
+    @screen md {
+      @apply text-7xl;
+    }
+  }
+
+  &__author {
+    @apply flex items-center my-0 mx-auto;
+    .avatar {
+      @apply h-20 w-20 mr-6;
+    }
+    .name {
+      @apply text-gray-500 font-sans text-2xl font-normal m-0;
+    }
+  }
+}

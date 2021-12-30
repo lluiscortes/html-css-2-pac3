@@ -1,0 +1,15 @@
+//-------------//
+//--- Actor ---//
+//-------------//
+.actor {
+  @apply h-full bg-gray-800 border-2 border-gray-800 shadow-2xl;
+}
+.actor__body {
+  @apply pl-7 pr-7 pt-7 pb-3 text-center;
+}
+.actor__name {
+  @apply font-normal italic;
+}
+.actor__footer {
+  @apply pl-7 pr-7 pb-7 pt-4 mt-auto;
+}

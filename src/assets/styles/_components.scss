@@ -12,20 +12,6 @@
   @apply py-24;
 }
 
-//---------------//
-//--- Buttons ---//
-//---------------//
-.btn {
-  @apply font-bold py-4 px-6;
-}
-.btn-blue {
-  @apply bg-blue text-white;
-}
-.btn-blue:hover {
-  @apply bg-blue;
-}
-
-
 //-------------------//
 //--- Site Header ---//
 //-------------------//
@@ -48,6 +34,10 @@
 .toggle {
   @apply flex flex-col items-center justify-center cursor-pointer h-16 w-16;
 
+  &--close {
+    @apply opacity-50;
+  }
+
   &__bar {
     @apply bg-white my-1 h-1 w-10 transition-all ease-in-out duration-200;
   }
@@ -58,15 +48,15 @@
 //--- Navbar ---//
 //--------------//
 .navbar {
-  @apply flex flex-col items-center justify-center fixed left-0 top-0 bg-blue invisible
-  p-3 h-screen w-3/4 transition-all ease-in-out duration-200 transform -translate-x-full;
+  @apply flex flex-col items-center justify-center fixed left-0 top-0 bg-blue invisible opacity-0
+  p-3 h-screen w-3/4 transition-all ease-in-out duration-0 transform -translate-x-full;
 
   @screen xl {
     @apply w-1/4;
   }
 
   &--show {
-    @apply translate-x-0 visible;
+    @apply duration-200 translate-x-0 visible opacity-100;
   }
 
   &__menu {
@@ -78,7 +68,10 @@
   }
 
   &__link {
-    @apply text-white block font-serif text-2xl font-bold text-center;
+    @apply text-white block font-serif text-2xl font-bold text-center transform duration-200;
+    &:hover {
+      @apply translate-x-3;
+    }
   }
 }
 
@@ -106,21 +99,7 @@
 }
 
 
-//-------------//
-//--- Actor ---//
-//-------------//
-.actor {
-  @apply h-full bg-gray-800 border-2 border-gray-800 shadow-2xl;
-}
-.actor__body {
-  @apply pl-7 pr-7 pt-7 pb-3 text-center;
-}
-.actor__name {
-  @apply font-normal italic;
-}
-.actor__footer {
-  @apply pl-7 pr-7 pb-7 pt-4 mt-auto;
-}
+
 
 
 //--------------------//
@@ -146,7 +125,8 @@
 //--------------//
 //--- Footer ---//
 //--------------//
-.footer  {
+.footer {
+  @apply bg-gray-900;
 
   &__navbar {
     @apply flex flex-col items-center flex-wrap py-16;

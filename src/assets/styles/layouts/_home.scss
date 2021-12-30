@@ -1,0 +1,10 @@
+//-----------------//
+//--- Home Menu ---//
+//-----------------//
+.home-menu {
+  @apply flex flex-col items-center justify-center h-screen max-w-2xl mx-auto;
+
+  .btn {
+    @apply w-full m-5;
+  }
+}

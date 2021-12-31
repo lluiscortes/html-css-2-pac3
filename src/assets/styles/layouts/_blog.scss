@@ -3,7 +3,21 @@
 //--------------------//
 .blog-content {
   @apply py-20;
+
+  p {
+    @apply mb-5;
+  }
+
+  figure {
+    @apply my-20 mx-auto max-w-2xl;
+  }
+
+  figcaption {
+    @apply text-gray-500 mt-3 mx-auto mb-0 text-center;
+  }
 }
+
+
 
 //-------------------//
 //--- Blog Header ---//
@@ -36,5 +50,24 @@
     .name {
       @apply text-gray-500 font-sans text-2xl font-normal m-0;
     }
+  }
+}
+
+
+//------------------//
+//--- Blog Intro ---//
+//------------------//
+.blog-intro {
+  @apply max-w-2xl pt-4 pl-6 relative;
+  @screen md {
+    @apply ml-20 pt-5 pl-7;
+  }
+
+  p {
+    @apply font-serif text-2xl italic;
+  }
+
+  &__rectangle {
+    @apply bg-blue h-24 w-24 left-0 top-0 absolute -z-1;
   }
 }

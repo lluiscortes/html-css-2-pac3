@@ -1,0 +1,9 @@
+//------------------//
+//--- Blockquote ---//
+//------------------//
+blockquote {
+  @apply border-l-4 border-r-4 border-blue float-left font-serif text-2xl mt-5 mb-6 max-w-lg px-5;
+  @screen md {
+    @apply mt-7 mr-12 mb-10;
+  }
+}

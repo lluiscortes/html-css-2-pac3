@@ -1,0 +1,62 @@
+//-------------------//
+//--- Site Header ---//
+//-------------------//
+.header {
+  @apply z-10 absolute top-5 right-5;
+
+  &__brand {
+    @apply flex items-center justify-between;
+  }
+
+  &__logo {
+    @apply border-4 border-blue h-auto mr-4 w-16;
+  }
+}
+
+
+//--------------//
+//--- Navbar ---//
+//--------------//
+.navbar {
+  @apply flex flex-col items-center justify-center fixed left-0 top-0 bg-blue invisible opacity-0
+  p-3 h-screen w-3/4 transition-all ease-in-out duration-0 transform -translate-x-full;
+
+  @screen xl {
+    @apply w-1/4;
+  }
+
+  &--show {
+    @apply duration-200 translate-x-0 visible opacity-100;
+  }
+
+  &__menu {
+    @qpply flex flex-col flex-wrap m-0 p-0;
+  }
+
+  &__item {
+    @apply my-7;
+  }
+
+  &__link {
+    @apply text-white block font-serif text-2xl font-bold text-center transform duration-200;
+    &:hover {
+      @apply translate-x-3;
+    }
+  }
+}
+
+
+//--------------//
+//--- Toggle ---//
+//--------------//
+.toggle {
+  @apply flex flex-col items-center justify-center cursor-pointer h-16 w-16;
+
+  &--close {
+    @apply opacity-50;
+  }
+
+  &__bar {
+    @apply bg-white my-1 h-1 w-10 transition-all ease-in-out duration-200;
+  }
+}

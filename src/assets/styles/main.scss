@@ -13,7 +13,7 @@
  * Import variables
  */
 
-@import "variables";
+
 
 /**
  * Import npm dependencies
@@ -32,6 +32,9 @@
 @import "layouts/home";
 @import "components";
 @import 'layouts/blog';
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/page';
 
 /**
  * Components
@@ -40,6 +43,7 @@
 @import 'components/sharing-buttons';
 @import 'components/actor';
 @import 'components/blockquote';
+@import 'components/social-icons';
 
 /**
  * Tailwind Utilities

@@ -1,0 +1,55 @@
+//--------------//
+//--- Footer ---//
+//--------------//
+.footer {
+  @apply bg-gray-900;
+
+  &__navbar {
+    @apply flex flex-col items-center flex-wrap py-16;
+    @screen lg {
+      @apply flex-row justify-between;
+    }
+  }
+
+  &__logo {
+    @apply border-2 border-blue h-auto mb-12 w-24;
+    @screen lg {
+      @apply m-0;
+    }
+  }
+
+  &__menu {
+    @apply mb-12;
+    @screen lg {
+      @apply m-0;
+    }
+
+    ul {
+      @apply flex flex-col text-center;
+      @screen lg {
+        @apply flex-row;
+      }
+    }
+
+    li {
+      @apply mb-7;
+      @screen lg {
+        @apply mb-0 mx-5;
+      }
+    }
+
+    a {
+      @apply text-gray-500 font-serif text-xl;
+      &:hover {
+        @apply text-white;
+      }
+      &.active {
+        @apply border-b-2 border-blue text-white pb-2;
+      }
+    }
+  }
+
+  &__credits {
+    @apply border-t border-gray-700 text-gray-500 py-9 text-center text-lg;
+  }
+}

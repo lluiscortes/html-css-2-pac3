@@ -1,0 +1,21 @@
+//------------//
+//--- Page ---//
+//------------//
+.page-header {
+
+  &__rectangle {
+    @apply absolute -z-1 w-1/3 h-96 h-10 bg-blue;
+    @screen xl {
+      @apply w-1/4;
+    }
+  }
+}
+.page-title {
+  @apply pt-40 mb-32 max-w-xs text-6xl leading-tight;
+  @screen xl {
+    @apply text-8xl max-w-md ml-16;
+  }
+}
+.page-description {
+  @apply text-lg mx-auto mb-4 max-w-3xl text-center;
+}
